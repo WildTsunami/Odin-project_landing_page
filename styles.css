@@ -1,0 +1,210 @@
+/* Base code */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto";
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Buttons */
+.button_sign-up{
+    display: inline-block;
+    padding: 5px 20px;
+
+    background-color: #3882f6;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.button_sign-up:hover{
+    color: #3882f6;
+    background-color: white;
+}
+
+.action_content .button_sign-up{
+    border: 2px solid white;
+}
+
+/* ------------------ General layout ----------------- */
+header, section, footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav, .header_content, .action{
+    width: 75%;
+}
+
+.figures, .quote_content{
+    width: 65%;
+}
+
+/* ------------------- Header ------------------------ */
+header{
+    background-color: #1f2937;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 16px;
+}
+nav > span{
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 900;
+}
+nav ul{
+    display: flex;
+    gap: 25px;
+}
+nav a{
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.header_content{
+    display: flex;
+    gap: 30px;
+
+    padding: 100px 0;
+}
+.header_content > .text{
+    flex: 1;
+}
+.header_content > .text *{
+    margin-bottom: 8px;
+}
+.header_content > .text > h1{
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+.header_content > .text > p{
+    color: #e5e7eb;
+    font-size: 18px;
+}
+.header_content > img{
+    flex: 1;
+    width: 55%;
+}
+
+/* ------------------- Main content ------------------ */
+/* First section with the four figures */
+.first-section{
+    margin: 30px 0 80px;
+}
+.first-section > h2{
+    margin-bottom: 30px;
+
+    color: #1f2937;
+    font: 36px 900;
+}
+.figures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+.figures figure{
+    flex-basis: 22%;
+}
+.figures img{
+    width: 100%;
+    min-width: 230px;
+    min-height: 230px;
+
+    border-radius: 10%;
+    box-shadow: 0px 0px 5px 2px rgba(50, 50, 50, 0.75);
+}
+.figures figcaption{
+    margin-top: 10px;
+
+    text-align: center;
+}
+
+/* Second section with the big quote */
+.second-section{
+    background-color: #e5e7eb;
+}
+
+/* ------------------- Second section with the big quote */
+.quote_content{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1100px;
+    padding: 80px 0;
+}
+.quote_content > blockquote{
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+}
+.quote_profile{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    
+    width: 150px;
+}
+.quote_profile > a{
+    width: 80px;
+    height: 85px;
+    margin: 10px auto;
+}
+.quote_profile img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.quote_profile img:hover{
+    opacity: 0.7;
+}
+.quote_profile cite{
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --- Third and last section with the sign-up bloc --- */
+.third_section > .background{
+    width: 75%;
+    margin: 100px;
+
+    background-color: #3882f6;
+    border-radius: 10px;
+}
+.third_section .action_content{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+    width: 88.2%;
+    padding: 35px 0;
+    margin: auto;
+}
+.third_section .action_text{
+    color: white;
+}
+
+/* ------------------- Footer ------------------------ */
+footer{
+    padding: 15px 0;
+
+    background-color: #1f2937;
+    color: #e5e7eb;
+}
